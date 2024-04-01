@@ -1,0 +1,13 @@
+<h1>FREQUENTLY ASKED QUESTIONS</h1>
+
+<ul>
+    {{range .}}
+        {{template "faq" .}}
+    {{end}}
+</ul>
+
+
+{{define "faq" }}
+    <h3>{{.Question}}</h3>
+    <p>{{.Answer}}</p>
+{{end}}

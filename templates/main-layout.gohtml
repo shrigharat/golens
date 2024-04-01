@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <header class="w-full bg-[#212121] text-white h-[60px]">
+        <nav class="w-full p-4 flex justify-between items-center">
+            <span class="brand text-2xl">Lenslocked</span>
+            <ul class="flex gap-2">
+                <li><a href="/home">Home</a><li>
+                <li><a href="/contact">Contact</a><li>
+                <li><a href="/faq">FAQ</a><li>
+                <li><a class="btn border border-white px-2 py-1 rounded-md" href="/sign-in">Sign in</a><li>
+                <li><a class="btn border border-white px-2 py-1 rounded-md hover:bg-white hover:text-black" href="/sign-up">Sign up</a><li>
+            </ul>
+        </nav>
+    </header>
+    {{template "page"}}
+    <footer class="mt-4 px-4 pb-4 h-[100px]">
+        <hr class="w-full bg-[#dcdcdc] h-0.5" />
+        <div class="mt-4">© 2024 Lenslocked. All rights reserved</div>
+    </footer>
+</body>
+</html>
